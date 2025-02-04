@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose Your Country</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+        }
+        h2 {
+            color: #333;
+            margin-top: 50px;
+        }
+        .flag-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .flag {
+            width: 120px;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        .flag:hover {
+            transform: scale(1.1);
+        }
+        .cta-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 15px 30px;
+            background-color: #ff4c4c;
+            color: white;
+            font-size: 18px;
+            text-decoration: none;
+            border-radius: 5px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .cta-btn:hover {
+            background-color: #e04343;
+        }
+    </style>
+    <script>
+        function goToOffer() {
+            window.location.href = "https://your-affiliate-link.com";
+        }
+    </script>
+</head>
+<body>
+    <h2>Select Your Country to Proceed</h2>
+    <div class="flag-container">
+        <img src="usa-flag.png" alt="USA" class="flag" onclick="goToOffer()">
+        <img src="uk-flag.png" alt="UK" class="flag" onclick="goToOffer()">
+        <img src="canada-flag.png" alt="Canada" class="flag" onclick="goToOffer()">
+    </div>
+    <a href="https://your-affiliate-link.com" class="cta-btn">Continue</a>
+</body>
+</html>
